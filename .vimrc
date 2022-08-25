@@ -26,3 +26,5 @@ map <leader>e :Ex<cr>
 map ;h :bprev<cr>
 map ;l :bnext<cr>
 
+" To open the URL link when pressing the 'gx'
+nmap gx :silent execute "!explorer.exe " . shellescape("<cWORD>")<CR>:redr!<CR>
