@@ -5,3 +5,4 @@
 # git specific 
 alias gs='git status'
 alias gl='git log --raw'
+alias gd='git diff'
