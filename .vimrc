@@ -47,7 +47,7 @@ nmap ,e :!main.sh<cr>
 
 
 " test for the vim 
-nmap ,t :call popup_atcursor("Test popup string", #{
+nmap ,t :call popup_atcursor("1.Cool Cool this is vignesh I am going to rock this floor", #{
 		\ pos: 'botleft',
 		\ line: 'cursor-1',
 		\ col: 'cursor',
