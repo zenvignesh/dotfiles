@@ -7,7 +7,7 @@ set hlsearch
 set ignorecase
 set smartcase
 set cursorline
-
+set wildmenu
 
 :nmap <Leader>d :.!date<cr>
 
@@ -32,11 +32,14 @@ map ;n :cn<cr>
 map ;p :cp<cr>
 map ;o :copen<cr>
 
+" toggle highlight search
+nnoremap <F3> :set hlsearch!<CR>
+
 " To open the URL link when pressing the 'gx'
 nmap gx :silent execute "!explorer.exe " . shellescape("<cWORD>")<CR>:redr!<CR>
 
 " To open Terminal
-nmap <leader>t :terminal<cr>
+nmap <leader>t :vert terminal<cr>
 
 " Column indicator
 :call matchadd('colorColumn','\%81v',100)
@@ -54,3 +57,8 @@ nmap ,t :call popup_atcursor("1.Cool Cool this is vignesh I am going to rock thi
 		\ moved: 'WORD',
 		\ })<cr>
 
+" markdown related
+map <leader>u1 :normal! yypVr=<cr>
+
+" Display line numbers in the netrw window
+let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
