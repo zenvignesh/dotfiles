@@ -135,6 +135,7 @@
 - g* search global work under the cursor forward
 - g# search global work under the cursor backward
 
+- :grep -rinw 'text' /c/vwos/work - searching recursively for a text
 # Search result colour scheme 
 
 - hi Search cterm=NONE ctermfg=black ctermbg=yellow - we can use any color here
@@ -156,9 +157,7 @@
 - shift $ - to to end of the line
 - g shift uu - convert to upper case all of the line
 - g shift uu - convert to lower case all of the line
-
-
-
+- Visual select the text, then U for uppercase or u for lowercase. To swap all casing in a visual selection, press ~ (tilde). Without using a visual selection, gU<motion> will make the characters in motion uppercase, or use gu<motion> for lowercase.
 
 
 # Buffer method
