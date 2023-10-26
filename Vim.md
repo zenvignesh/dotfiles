@@ -134,8 +134,12 @@
 - # search work under cursor backwrd
 - g* search global work under the cursor forward
 - g# search global work under the cursor backward
-
 - :grep -rinw 'text' /c/vwos/work - searching recursively for a text
+- f<char> - forward to perticular char
+- F<char> - backward to perticular char
+- ; - repeat the operation in forward direction
+- , - repeat the operation in backward direction
+
 # Search result colour scheme 
 
 - hi Search cterm=NONE ctermfg=black ctermbg=yellow - we can use any color here
@@ -157,6 +161,8 @@
 - shift $ - to to end of the line
 - g shift uu - convert to upper case all of the line
 - g shift uu - convert to lower case all of the line
+- U - visually select and 'U' to upper case
+- u - visually select and 'u' to lower case
 - Visual select the text, then U for uppercase or u for lowercase. To swap all casing in a visual selection, press ~ (tilde). Without using a visual selection, gU<motion> will make the characters in motion uppercase, or use gu<motion> for lowercase.
 
 
@@ -235,3 +241,17 @@
 # vim training 
 
 - https://youtu.be/1alWK5ByNMc - Basic training
+
+# Convert from Decimal to Hex
+
+- visually select the required sting to convert, then type 'Esc', and ':', then type 'xxd'. Ex. '<,'>!xxd
+
+# Open current directory via windows explorer within vim
+- :!start .
+
+# inclrement the number below the cursor
+- Crtl+a
+
+# decrement the number under the cursor
+- Crtl+x
+
