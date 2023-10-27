@@ -1,0 +1,18 @@
+= Setup git configuration specific to a particular repository
+
+[cols="1a,1a"]
+[%autowidth]
+|===
+
+| Git setup user email
+| `git config --local user.email xyx@email.com`
+
+| Get setup user name
+| `git config --local user.name "xyxasa"`
+
+| Setup SSH
+| create private and public key and update the public key in the github.
+
+| Video demo
+| https://youtu.be/_NZr93fd0eE?si=SxV7lZhMukjKT6AH
+|===
