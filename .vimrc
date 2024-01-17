@@ -25,20 +25,21 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 map <leader>ss :setlocal spell!<cr>
 
-map <leader>e :Ex<cr>
+nnoremap E :Ex<cr>
+nnoremap W :bw<cr>
 
 " Git related
 :map ,l :!git.sh<cr>
 
 " Buffer related
-map J :bprev<cr>
-map K :bnext<cr>
-map X :bd<cr>
+nnoremap J :bprev<cr>
+nnoremap K :bnext<cr>
+nnoremap X :bd<cr>
 
 " Search related
-map ;n :cn<cr>
-map ;p :cp<cr>
-map ;o :copen<cr>
+nnoremap <C-j> :cnext<cr>
+nnoremap <C-k> :cprev<cr>
+nnoremap ;o :copen<cr>
 
 " toggle highlight search
 nnoremap <F3> :set hlsearch!<CR>
