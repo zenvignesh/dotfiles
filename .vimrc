@@ -68,7 +68,7 @@ nmap ant :.!cat ~/bin/template_nested-table_adoc.adoc<CR>
 nmap <leader>t :terminal<cr>
 
 " Column indicator
-:call matchadd('colorColumn','\%121v',100)
+:call matchadd('colorColumn','\%121v',70)
 :highlight ColorColumn ctermbg=magenta
 
 " project specific
