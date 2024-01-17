@@ -31,9 +31,9 @@ map <leader>e :Ex<cr>
 :map ,l :!git.sh<cr>
 
 " Buffer related
-map ;h :bprev<cr>
-map ;l :bnext<cr>
-map ;d :bd<cr>
+map J :bprev<cr>
+map K :bnext<cr>
+map X :bd<cr>
 
 " Search related
 map ;n :cn<cr>
