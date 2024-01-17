@@ -255,3 +255,11 @@
 # decrement the number under the cursor
 - Crtl+x
 
+# copy the whole file into clipboard
+- :%y+ and press Enter.
+
+
+# shell commands
+
+- move a folder and it's contents into another folder
+    -  mv source_folder destination_folder
