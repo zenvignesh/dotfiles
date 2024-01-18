@@ -1,3 +1,5 @@
+let mapleader = "\<Space>"
+
 set nu rnu
 set path+=**
 set tabstop=4
