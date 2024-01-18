@@ -44,7 +44,8 @@ nnoremap <leader>sf :vim //g %<Left><Left><Left><Left>
 nnoremap <leader>sd :grep -rinw "" .<Left><Left><Left>
 nnoremap <C-j> :cnext<cr>
 nnoremap <C-k> :cprev<cr>
-nnoremap ;o :copen<cr>
+nnoremap <leader>o :copen<cr>
+nnoremap <leader>x :cclose<cr>
 
 " toggle highlight search
 nnoremap <F3> :set hlsearch!<CR>
