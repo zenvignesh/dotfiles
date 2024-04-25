@@ -93,5 +93,8 @@ nnoremap <F6> gg/_ http<CR>:.s/_ http/_ [[http/<CR>A]]<ESC>
 " Make svg file from mindmap puml file
 nnoremap <F7> :!puml_to_svg.sh %<CR>
 
+" Lines to save text folding
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
 
 
