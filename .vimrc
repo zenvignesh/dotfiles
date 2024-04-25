@@ -41,7 +41,7 @@ nnoremap X :bd<cr>
 " Search related
 " Search current file
 nnoremap <leader>sf :vim //g %<Left><Left><Left><Left>
-nnoremap <leader>sd :grep -rinw "" .<Left><Left><Left>
+nnoremap <leader>sd :grep -rinw --include \*.c --include \*.h "" .<Left><Left><Left>
 nnoremap <C-j> :cnext<cr>
 nnoremap <C-k> :cprev<cr>
 nnoremap <leader>o :copen<cr>
